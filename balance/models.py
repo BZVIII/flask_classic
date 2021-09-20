@@ -30,4 +30,12 @@ class ListaMovimientos():
         for movimiento in self.movimientos:
             dwriter.writerow(movimiento)
         fichero.close()
+
+    def anyadir(self, valor):
+        movimiento = {}
+        movimiento['fecha'] = valor['fecha']
+        movimiento['concepto'] = valor['concepto']
+        movimiento['ingreso_gasto'] = valor['ingreso_gasto']
+        movimiento['cantidad'] = valor['cantidad']
+        self.movimientos.append(movimiento)
     

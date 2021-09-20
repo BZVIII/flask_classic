@@ -18,7 +18,6 @@ footer {
 }
 
 header *, footer * {
-    border-radius: var(--separacion-defecto);
     background-color: var(--color-primario);
     color: var(--blanco);
     font-size: 1.5rem;
@@ -31,5 +30,25 @@ header *, footer * {
 }
 
 table.paper {
+    width: 100%;
+}
+
+.campo-formulario label {
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0;
+    margin-top: var(--separacion-defecto);
+}
+
+.campo-formulario .label {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0;
+    margin-top: var(--separacion-defecto);
+}
+
+.campo-formulario input:not([type="radio"]) {
     width: 100%;
 }
