@@ -5,22 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Balance de cuentas</title>
+        <link rel="stylesheet" href="static/css/flat-remix.css">
+        <link rel="stylesheet" href="static/css/styles.css">
     </head>
     <body>
         <header>
             <p>Balance de gastos</p>
         </header>
-        <section>
+        <section class="contenedor">
             <nav>
                 <p>Inicio | Nuevo</p>
             </nav>
             <h1>Lista de movimientos</h1>
-            <table>
+            <table class="paper">
                 <tr>
-                    <th>Fecha</th>
-                    <th>Concepto</th>
-                    <th>I/G</th>
-                    <th>Cantidad</th>
+                    <th >Fecha</th>
+                    <th >Concepto</th>
+                    <th >I/G</th>
+                    <th >Cantidad</th>
                 </tr>
                 {% for item in items %}
                 <tr>
@@ -38,7 +40,7 @@
             </table>
         </section>
         <footer>
-            &copy; 2021 - Todos los derechos reservados
+            <p>&copy; 2021 - Todos los derechos reservados</p>
         </footer>
     </body>
 </html>
